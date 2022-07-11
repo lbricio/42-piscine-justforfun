@@ -6,7 +6,7 @@
 /*   By: lbricio- <lbricio-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 21:27:56 by lbricio-          #+#    #+#             */
-/*   Updated: 2022/07/10 22:30:12 by lbricio-         ###   ########.fr       */
+/*   Updated: 2022/07/10 22:45:03 by lbricio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,25 +35,26 @@ void	breakline(int *x_point, int *y_point)
 }
 
 //call function fit_line_with based on actual line
+//this function solve all rush00 problems just changing fit_line strings
 void	rush(int x, int y)
 {
 	int	x_point;
-	int y_point;
+	int	y_point;
 
 	if (y <= 0 || x <= 0)
 		return ;
- 	y_point = 1;
 	x_point = 1;
+	y_point = 1;
 	while (x_point <= x && y_point <= y)
 	{
-		if  (y_point == 1)
+		if (y_point == 1)
 			fit_line_with ("ABC", x_point, x);
-		else if  (y_point > 1 && y_point < y)
+		else if (y_point > 1 && y_point < y)
 			fit_line_with ("B B", x_point, x);
-		else if  (y_point == y)
+		else if (y_point == y)
 			fit_line_with ("CBA", x_point, x);
 		x_point++;
 		if (x_point > x)
-			breakline(&x_point,  &y_point);
+			breakline(&x_point, &y_point);
 	}
 }
