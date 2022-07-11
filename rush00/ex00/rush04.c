@@ -6,7 +6,7 @@
 /*   By: lbricio- <lbricio-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 21:27:56 by lbricio-          #+#    #+#             */
-/*   Updated: 2022/07/10 22:15:46 by lbricio-         ###   ########.fr       */
+/*   Updated: 2022/07/10 22:30:12 by lbricio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	ft_putchar(char c);
 
-// fit the current position in line with correct character based on position
+// fit the current position in line with correct character based on column
 void	fit_line_with(char *this_letter, int x_point, int x)
 {
 	if (x_point == 1)
@@ -26,7 +26,7 @@ void	fit_line_with(char *this_letter, int x_point, int x)
 		ft_putchar (this_letter[2]);
 }
 
-// break the line, set y_point to start of line and add a line to line count
+// go to next line, set y_point to start of line and add a line to line count
 void	breakline(int *x_point, int *y_point)
 {
 	ft_putchar('\n');
@@ -34,7 +34,7 @@ void	breakline(int *x_point, int *y_point)
 	*y_point += 1;
 }
 
-//call function fit_line_with based on actual column
+//call function fit_line_with based on actual line
 void	rush(int x, int y)
 {
 	int	x_point;
