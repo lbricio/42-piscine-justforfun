@@ -6,7 +6,7 @@
 /*   By: lbricio- <lbricio-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 21:27:56 by lbricio-          #+#    #+#             */
-/*   Updated: 2022/07/10 21:57:57 by lbricio-         ###   ########.fr       */
+/*   Updated: 2022/07/10 22:15:46 by lbricio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	breakline(int *x_point, int *y_point)
 {
 	ft_putchar('\n');
 	*x_point = 1;
-	*y_point++;
+	*y_point += 1;
 }
 
 //call function fit_line_with based on actual column
