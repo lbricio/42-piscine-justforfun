@@ -6,12 +6,11 @@
 /*   By: lbricio- <lbricio-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 21:27:56 by lbricio-          #+#    #+#             */
-/*   Updated: 2022/07/10 22:45:03 by lbricio-         ###   ########.fr       */
+/*   Updated: 2022/07/10 23:26:58 by lbricio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 void	ft_putchar(char c);
 
